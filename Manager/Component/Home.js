@@ -3,20 +3,20 @@ import {
   Text,
   StyleSheet,
   Image,
-  ImageBackground,
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
+import Group from "../img/Group"
 import React from 'react';
-
+import { ScaledSheet } from 'react-native-size-matters';
 
 const Home = () => {
   return (
-    <ScrollView style={{backgroundColor:"black"}} > 
+    <ScrollView style={styles.roll}>
       <View style={styles.back}>
         <View>
           <Image
-            style={{height: 700, opacity: 0.3}}
+            style={styles.backimg}
             source={require('../img/imageback.png')}
           />
         </View>
@@ -24,34 +24,63 @@ const Home = () => {
           <View style={styles.frontview}>
             <Image
               source={require('../img/Vector.png')}
-              style={{width: 30, height: 30, marginRight: '10%'}}
+              style={styles.vector}
             />
-            <Text style={{color: '#FFFFFF', fontSize: 25,fontWeight:"900"}}>Welcome,HUBO !</Text>
+            <Text style={styles.welcome}>
+              Welcome,HUBO !
+            </Text>
           </View>
+          <View style={styles.timearround} >
           <Text style={styles.time}>12:48</Text>
+          </View>
+        <View style={styles.belowtime} >
           <TouchableOpacity style={styles.btn}>
             <View style={styles.singpore}>
-              <Text style={{color: '#FFFFFF', marginRight: '10%',fontSize:20}}>
+              <Text
+                style={styles.singporeText}>
                 Singapore
               </Text>
               <Image
                 source={require('../img/Polygon.png')}
-                style={{width: 10, height: 10, marginTop: 7}}
+                style={styles.polygon}
               />
             </View>
           </TouchableOpacity>
+         </View>
         </View>
       </View>
-      <View style={styles.bottom} >
-        <View  style={styles.group} >
-        <Image
-        source={require('../img/Group1.png')}
-        style={{width:75,height: 78,marginLeft:30}}
-        />
-        <View style={styles.contactbox} >
-        <Text style={{marginLeft:10,fontSize:20,fontWeight:"800",color:"#4F73F5",lineHeight:39}}>connected</Text>
-        <Text style={{color:"#000000",fontWeight:"800"}} >112.684.195.1.3</Text>
+      <View style={styles.bottom}>
+        <View style={styles.group}>
+           <Group  style={styles.groupIcon}  />
+          <View style={styles.contactbox}>
+            <Text
+              style={styles.connected}>
+              connected
+            </Text>
+            <Text style={styles.date}>
+              112.684.195.1.3
+            </Text>
+          </View>
         </View>
+        <View style={styles.speedbtn}>
+          <TouchableOpacity> 
+            <View
+              style={styles.butimg1 }>
+              <Image
+                source={require('../img/Downarrow.png')}
+                style={styles.dowarrow}
+              />
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity  >
+            <View
+              style={styles.butimg}>
+              <Image
+                source={require('../img/Uparrow.png')}
+                style={styles.uparrow}
+              />
+            </View>
+          </TouchableOpacity>
         </View>
       </View>
     </ScrollView>
@@ -59,64 +88,173 @@ const Home = () => {
 };
 
 export default Home;
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
   back: {
     backgroundColor: 'black',
-    height: '60%',
-    
+    height: '270@s',
   },
-  text: {
-    fontFamily: 'DancingScript-VariableFont_wght',
-    color: 'white',
-    fontSize: 20,
-  },
-  bottom:{
-  backgroundColor:"#4F73F5",
-  height:"40%",
-  borderTopLeftRadius:30,
-  borderTopRightRadius:30,
-  width:"100%"
   
+  bottom: {
+    backgroundColor: '#4F73F5',
+    height: "500@s",
+    borderTopLeftRadius: "30@s",
+    borderTopRightRadius: "30@s",
+    width: '350@s',
+    alignItems:"center",
+   
   },
   btn: {
-    marginLeft: '30%',
-    marginTop: '10%',
+    marginLeft: '60@s',
+    marginTop: '10@s',
+    height:"40@s",
+    width:"55@s",
+    alignContent:"center",
+    justifyContent:"center",
+    
   },
   time: {
-    fontSize: 80,
+    fontSize: "55@s",
     color: '#FFFFFF',
-    fontWeight: 'bold',
-    marginLeft: '30%',
-    marginTop: '20%',
+    fontFamily:"A Love of Thunder",
+    marginLeft:"90@s",
+    
+  },
+  timearround:{
+    justifyContent:"center",
+    alignItems:"center",
+    marginLeft:"20@s",
+    marginTop:"30@s",
   },
   frontview: {
     flexDirection: 'row',
-    marginLeft: '10%',
-    marginTop: '15%',
+    marginLeft: '15@s',
+    marginTop: '8@s',
+
   },
   singpore: {
-    borderWidth: 1,
-    borderColor:"#FFFFFF",
+    borderWidth: "0.4@s",
+    borderColor: '#FFFFFF',
     flexDirection: 'row',
-    width: '70%',
-    padding: '8%',
-    backgroundColor: 'rgba(255,255,255,0.1)',
-    borderRadius: 10,
-    justifyContent: 'space-between',
+    width: '110@s',
+    padding: '11@s',
+    marginLeft:"8@s",
+    backgroundColor: 'rgba(255,255,255,0.2)',
+    borderRadius: "6@s",
+    justifyContent: 'space-evenly',
   },
-  group:{
-   marginLeft:"20%",
-   width:"58%",
-   marginTop:"10%",
-   padding:"10%",
-   borderRadius:168,
-   borderWidth:1,
-   borderColor:"white",
-   backgroundColor:"white",
-   elevation:1,
+  group: {
+    width: "185@s",
+    borderRadius: '1000@s',
+    alignItems:"center",
+    marginTop:"50@s",
+    marginBottom:"10@s",
+    justifyContent:"center",
+    height:"185@s",
+    backgroundColor: 'white',
+    elevation: 25,
   },
-  contactbox:{
-     marginTop:"10%",
-     marginLeft:"20%",
+  contactbox: {
+    marginTop: '5@s',
+    marginLeft: '20@s',
+    marginBottom:"10@s",
+  },
+  speedbtn: {
+    flexDirection: 'row',
+    justifyContent:"center",
+    alignItems:"center",
+    marginTop: "30@s",
+  },
+  connected:{
+    marginLeft: "10@s",
+    fontSize: "16@s",
+    fontWeight: '800',
+    color: '#4F73F5',
+    lineHeight: "30@s",
+    fontFamily:"Poppins-Bold",
+    marginLeft:"-3@s",
+  },
+  date:{
+    color: '#000000',
+     fontWeight: 'bold',
+      fontSize:"14@s",
+      fontFamily:"Poppins-SemiBold",
+      marginLeft:"-15@s",
+      marginRight:"10@s",
+  },
+  singporeText:{
+    color: '#FFFFFF',
+     marginRight: '8@s',
+      fontSize: "10@s",
+      fontWeight:"600", 
+      fontFamily:"Poppins-SemiBold"
+  },
+  butimg:{
+        padding: "20@s",
+        marginLeft: "15@s",
+        marginBottom:"10@s",
+        borderRadius: "10@s",
+       width:"140@s",
+       height:"50@s",
+       paddingLeft:"25@s",
+       justifyContent:"center",
+       alignItems:"center",
+      backgroundColor: 'rgba(255,255,255,0.3)',
+  },
+  butimg1:{
+    padding: "20@s",
+    marginLeft: "2@s",
+    marginBottom:"10@s",
+    borderRadius: "10@s",
+   width:"150@s",
+   height:"50@s",
+   paddingLeft:"25@s",
+   justifyContent:"center",
+   alignItems:"center",
+  backgroundColor: 'rgba(255,255,255,0.3)',
+  },
+  polygon:{
+    width: "9@s", 
+    height: "10@s", 
+    marginTop: "3@s",
+    justifyContent:"center",
+    alignItems:"center"
+  },
+  welcome:{
+    color: '#FFFFFF', 
+    fontSize: "20@s",
+    fontFamily:"A Love of Thunder",
+    marginBottom:"20@s",
+    marginTop:"15@s",
+    marginLeft:"5@s",
+  },
+  vector:{
+    width: "30@s", 
+    height: "30@s", 
+    marginRight: '8@s',
+    marginTop:"15@s"
+  },
+  backimg:{
+    height: "900@s", 
+    opacity: "0.2@s",
+
+  },
+  roll:{
+    backgroundColor:"black",
+    flex:1
+  },
+  dowarrow:{
+    width: "95@s", 
+    height: "20@s",
+  },
+  uparrow:{
+    width: "95@s", 
+    height: "20@s"
+  },
+  belowtime:{
+    marginTop:"10@s",
+    marginLeft:"60@s"
+  },
+  groupIcon:{
+    size:"70@s"
   }
 });
