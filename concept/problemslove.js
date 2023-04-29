@@ -6,7 +6,8 @@
 //     b=c;
 //     console.log(c)
 // }
-//2 res="";
+// n=5
+// res="";
 // for(i=0;i<=n;i++){
 //    for(j=0;j<=n;j++){
 //     if(i==j||i+j==n){
@@ -755,12 +756,12 @@ var alp=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R"
 // console.log(res)
 
 
-// 52 n=5
+//  n=4
 // res=""
 // let a=0 , b=1 , c=a+b
 // for(i=0;i<=n;i++){
 //     for(j=0;j<=i;j++){
-//         res+=c
+//         res+=c+" "
 //        c=a+b
 //        a=b
 //        b=c
@@ -823,4 +824,209 @@ var alp=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R"
 //     res+="\n"
 // }
 
+// console.log(res)
+// 55 res="" ,n=5
+//  for(i=1;i<=n;i++){
+//         for(j=1;j<=n;j++){
+//             if(i+j==n+1){
+//                 res+=i
+//             }else{
+//                 res+=" "
+//             }
+    
+//         }
+//         for(j=n-1;j>=1;j--){
+//             if(i+j==n+1){
+//                 res+=i
+//             }else{
+//                 res+=" "
+//             }
+    
+//         }
+//         res+="\n"
+//     }
+//     console.log(res)
+// 56 res="" ,n=5
+//    for(i=n;i>=1;i--){
+//         for(j=1;j<=n;j++){
+//             if(i+j==n+1){
+//                 res+=i
+//             }else{
+//                 res+=" "
+//             }
+    
+//         }
+//         for(j=n-1;j>=1;j--){
+//             if(i+j==n+1){
+//                 res+=i
+//             }else{
+//                 res+=" "
+//             }
+    
+//         }
+//         res+="\n"
+//     }
+//     console.log(res)
+//57 res=""
+// n=5;
+// for(i=1;i<=n;i++){
+//     for(j=1;j<=n-1;j++){
+//         if(j==1||i==1||i==n||j==n-1){
+//             res+="*"
+//         }else{
+//             res+=" "
+//         }
+//     }
+//     res+='\n'
+// }
+// console.log(res)
+//58 res=""
+// n=5;
+// for(i=1;i<=n;i++){
+//     for(j=1;j<=n+2;j++){
+//         if(j==1||i==1||i==n||j==n+2){
+//             res+="*"
+//         }else{
+//             res+=" "
+//         }
+//     }
+//     res+='\n'
+// }
+// console.log(res)
+//59 res="";
+// n=5;
+// for(i=1;i<=n;i++){
+//    for(j=1;j<=i;j++){
+//      res+=i
+//    }
+//    res+='\n'
+// }
+// console.log(res)
+// 60 res="";
+// n=5;
+// for(i=1;i<=n;i++){
+//    for(j=1;j<=i;j++){
+//      res+=j
+//    }
+//    res+='\n'
+// }
+// console.log(res)
+//61  n=5;
+// res="";
+// for(i=n;i>=0;i--){
+//     for(j=0;j<=n-i-1;j++){
+//         res+=" "
+//     }
+//     for(k=0;k<=i;k++){
+//         res+="* "
+//     }
+//     res+="\n"
+// }
+// console.log(res)
+
+//62  n=5;
+// res="";
+// for(i=n;i>=0;i--){
+//     for(j=0;j<=n-i-1;j++){
+//         res+="  "
+//     }
+//     for(k=1;k<=i;k++){
+//         if(k>1){
+//             res+="* "+"* "
+//         }else{
+//             res+="* "
+//         }
+       
+       
+//     }
+//     res+="\n"
+// }
+// console.log(res)
+// 63  n=5;
+//   res=""
+//   for(i=n;i>=0;i--){
+//     for(j=0;j<=n-i-1;j++){
+//      res+=" "
+//     }
+//     for(k=0;k<=i;k++){
+//         res+="*"
+//     }
+//     res+="\n"
+//   }
+//   console.log(res)
+//64 n=5;
+//   res=""
+//   for(i=n;i>=0;i--){
+//     for(j=0;j<=i;j++){
+//      res+="*"
+//     }
+//     res+="\n"
+//   }
+//   console.log(res)
+
+//65  n=5;
+// res="";
+// for(i=0;i<=n;i++){
+//     res+="*"
+// }
+// for(j=0;j<=n;j++){
+//   console.log(res)
+// }
+
+// 66 n=6;
+// res=""
+// for(i=0;i<=n;i++){
+//   for(j=0;j<=n-i-1;j++){
+//    res+=" "
+//   }
+//   for(k=j;k<=n;k++){
+//     res+=k
+//   }
+//   res+="\n"
+// }
+// for(i=n-1;i>=0;i--){
+//   for(j=0;j<=n-i-1;j++){
+//    res+=" "
+//   }
+//   for(k=j;k<=n;k++){
+//     res+=k
+//   }
+//   res+="\n"
+// }
+// console.log(res)
+// 67 n=10
+// res=""
+// val=1;
+// for(i=1;i<=n;i++){
+//     for(j=1;j<=n;j++){
+//     if(j<=val||j>=n-val+1){
+//         res+="*"
+//     }else{
+//         res+=" "
+//     }
+//     }
+//     if(i<=(n/2)){
+//      val++
+//     }else{
+//     val--
+       
+//     }
+//     res+='\n'
+// }
+// console.log(res)
+//68 n=5;
+// res="";
+// for(i=1;i<=n;i++){
+//   for(j=1;j<=n;j++){
+//     if(j==1||i==j){
+//       res+=i
+//     }else if(i==n){
+//      res+=n
+//     }else{
+//       res+=" "
+//     }
+   
+//   }
+//   res+='\n'
+// }
 // console.log(res)
