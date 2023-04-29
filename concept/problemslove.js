@@ -606,15 +606,221 @@ var alp=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R"
    
 // }
 // console.log(res)
-n=5;
-res=""
-for(i=n;i>=0;i--){
-    for(j=0;j<=n-i-1;j++){
-        res+=" "
-    }
-    for(k=0;k<=i;k++){
-        res+=alp[i]+" "
-    }
-    res+='\n'
-}
-console.log(res)
+//42  n=5;
+// res=""
+// for(i=n;i>=0;i--){
+//     for(j=n;j>=i;j--){
+//         res+=alp[j]
+//     }
+//     res+='\n'
+// }
+// for(i=0;i<=n;i++){
+//     for(j=n;j>=i;j--){
+//         res+=alp[j]
+//     }
+//     res+='\n'
+// }
+// console.log(res)
+// res=""
+// 43 n=6;
+// for(i=0;i<=n;i++){
+//     for(j=0;j<=n-i-1;j++){
+//         res+=" "
+//     }
+//     for(k=0;k<=i;k++){
+//         res+=alp[i]+" "
+//     }
+//     res+='\n'
+// }
+// for(i=n-1;i>=0;i--){
+//     for(j=0;j<=n-i-1;j++){
+//         res+=" "
+//     }
+//     for(k=0;k<=i;k++){
+//         res+=alp[i]+" "
+//     }
+//     res+='\n'
+// }
+// console.log(res)
+//44  n=6;
+// res=""
+// for(i=0;i<=n;i++){
+//    for(j=0;j<=n;j++){
+//      if(i==j){
+//         res+=alp[i]
+//      }else{
+//         res+=" "
+//      }
+//    }
+   
+//    for(j=n-1;j>=0;j--){
+//     if(i==j){
+//        res+=alp[i]
+//     }else{
+//        res+=" "
+//     }
+//   }
+//   res+="\n"
+// }
+// console.log(res)
+// 45 n=5;
+// res=""
+// for(i=0;i<=n;i++){
+//     for(j=0;j<=n;j++){
+//         res+=alp[i]
+//     }
+//     res+='\n'
+  
+// }
+// console.log(res)
+// 46 n=5;
+// res=""
+// for(i=0;i<=n;i++){
+//     for(j=0;j<=n;j++){
+//         res+=alp[j]
+//     }
+//     res+='\n'
+  
+// }
+// console.log(res)
+// 47  n=5;
+// res=""
+// for(i=0;i<=n;i++){
+//     for(j=n;j>=0;j--){
+//         res+=alp[j]
+//     }
+//     res+='\n'
+  
+// }
+// console.log(res)
+// 48  n=5;
+// res=""
+// for(i=n;i>=0;i--){
+//     for(j=n;j>=0;j--){
+//         res+=alp[i]
+//     }
+//     res+='\n'
+  
+// }
+// console.log(res)
+// 49 n=5;
+// res=""
+// for(i=0;i<=n;i++){
+//     for(j=0;j<=i;j++){
+//         res+=alp[j]
+//     }
+//     res+='\n'
+  
+// }
+// console.log(res)
+// 50 n=5;
+// res=""
+// for(i=1;i<=n;i++){
+//     for(j=1;j<=n;j++){
+//         if(i+j==n+1){
+//          res+=i
+//         }else{
+//             res+=" "
+//         }
+//     }
+//     for(j=n-1;j>=0;j--){
+//         if(i+j==n+1){
+//          res+=i
+//         }else{
+//             res+=" "
+//         }
+//     }
+//     res+='\n'
+// }
+// console.log(res)
+// 51  n=5;
+// res=""
+// for(i=n;i>=1;i--){
+//     for(j=1;j<=n;j++){
+//         if(i+j==n+1){
+//          res+=i
+//         }else{
+//             res+=" "
+//         }
+//     }
+//     for(j=n-1;j>=0;j--){
+//         if(i+j==n+1){
+//          res+=i
+//         }else{
+//             res+=" "
+//         }
+//     }
+//     res+='\n'
+// }
+// console.log(res)
+
+
+// 52 n=5
+// res=""
+// let a=0 , b=1 , c=a+b
+// for(i=0;i<=n;i++){
+//     for(j=0;j<=i;j++){
+//         res+=c
+//        c=a+b
+//        a=b
+//        b=c
+
+//     }
+//     res+='\n'
+// }
+// console.log(res)
+//53 n=10;
+// res="";
+// val=1
+// for(i=1;i<=n;i++){
+//     for(j=1;j<=i;j++){
+//         res+=val
+//         val++
+//     } 
+//     res+='\n'
+    
+// }
+// console.log(res)
+
+//54 res=''
+// n=5;
+// for(i=1;i<=n;i++){
+//     for(j=1;j<=n;j++){
+//         if(i+j==n+1){
+//             res+=i
+//         }else{
+//             res+=" "
+//         }
+
+//     }
+//     for(j=n-1;j>=1;j--){
+//         if(i+j==n+1){
+//             res+=i
+//         }else{
+//             res+=" "
+//         }
+
+//     }
+//     res+="\n"
+// }
+// for(i=n-1;i>=1;i--){
+//     for(j=1;j<=n;j++){
+//         if(i+j==n+1){
+//             res+=i
+//         }else{
+//             res+=" "
+//         }
+
+//     }
+//     for(j=n-1;j>=1;j--){
+//         if(i+j==n+1){
+//             res+=i
+//         }else{
+//             res+=" "
+//         }
+
+//     }
+//     res+="\n"
+// }
+
+// console.log(res)
