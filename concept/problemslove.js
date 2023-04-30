@@ -965,29 +965,21 @@ var alp=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R"
 // console.log(res)
 
 //64
-//val=0;
-// for(i=0;i<=n;i++){
-//    for(j=0;j<=n-i-1;j++){
-//    res+="  "
-//    }
-//    for(k=0;k<=i;k++){
-//       if(k==0){
-//          res+=alp[val]+"  "
-        
-//       }else{
-//          res+=alp[val]+" "+alp[val]+"  "
-//       }
+for(i=n;i>=-n;i--){
+   for(j=1;j<=Math.abs(i);j++){
+      res+=" "
+   }
+   for(k=Math.abs(i);k<=n;k++){
+      res+=String.fromCharCode(k+65)
      
-//    }
-//    res+='\n'
-//    val++
-// }
-// console.log(res)
-
+   }
+   res+='\n'
+} 
+console.log(res)
 
 //65
 
-//val=0;
+// val=0;
 // for(i=0;i<=n;i++){
 //    for(j=0;j<=n-i-1;j++){
 //    res+="  "
