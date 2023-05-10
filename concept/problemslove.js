@@ -688,7 +688,9 @@ res=""
 // console.log(res)
 
 
-// 44 val=1;
+44 
+// val=1;
+// n=7
 // for(i=1;i<=n;i++){
 //     for(j=1;j<=n;j++){
 //     if(j<=val||j>=n-val+1){
@@ -707,7 +709,7 @@ res=""
 // }
 // console.log(res)
 
-//45
+// 45
 // for(i=1;i<=n;i++){
 //    for(j=1;j<=n;j++){
 //       if(j==1||i==j){
@@ -965,17 +967,17 @@ var alp=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R"
 // console.log(res)
 
 //64
-for(i=n;i>=-n;i--){
-   for(j=1;j<=Math.abs(i);j++){
-      res+=" "
-   }
-   for(k=Math.abs(i);k<=n;k++){
-      res+=String.fromCharCode(k+65)
+// for(i=n;i>=-n;i--){
+//    for(j=1;j<=Math.abs(i);j++){
+//       res+=" "
+//    }
+//    for(k=Math.abs(i);k<=n;k++){
+//       res+=String.fromCharCode(k+65)
      
-   }
-   res+='\n'
-} 
-console.log(res)
+//    }
+//    res+='\n'
+// } 
+// console.log(res)
 
 //65
 
@@ -1022,10 +1024,12 @@ console.log(res)
 
 
 //67
+// n=4
+// val=n;
 // for(i=0;i<=n;i++){
 //    for(j=0;j<=n;j++){
 //      if(i==j){
-//         res+=alp[i]
+//         res+=alp[val-i]
 //      }else{
 //         res+=" "
 //      }
@@ -1033,7 +1037,7 @@ console.log(res)
    
 //    for(j=n-1;j>=0;j--){
 //     if(i==j){
-//        res+=alp[i]
+//        res+=alp[val-i]
 //     }else{
 //        res+=" "
 //     }
